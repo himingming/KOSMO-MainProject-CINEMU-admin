@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="kr.co.cinemuadmin.dao.MemberDao">
+  
+  <!-- 로그인을 위한 맵 -->
+   <select id="Login" parameterType="membervo" resultType="membervo">
+      select lid, lpwd from login where lid=#{lid} and lpwd=#{lpwd}
+   </select>
+  
+  </mapper>
